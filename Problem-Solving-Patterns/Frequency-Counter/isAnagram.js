@@ -1,4 +1,5 @@
-/* Given two strings, write a function to determine if the second string is an anagram of the first. An anagram is a word, phrase, or name formed by rearranging the letters of another, such as listen, from silent */
+/* Given two strings, write a function to determine if the second string is an anagram of the first. An anagram is a word, phrase,
+or name formed by rearranging the letters of another, such as listen, from silent */
 
 // Assume all strings are lowercase letters.
 
