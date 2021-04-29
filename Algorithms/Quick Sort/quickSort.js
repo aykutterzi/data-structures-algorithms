@@ -22,7 +22,14 @@ function pivot(arr, start = 0, end = arr.length - 1) {
 pivot([4, 6, 5, 8, 2, 1, 9, 5]);
 
 function quickSort(arr, left = 0, right = arr.length - 1) {
-  let pivotIndex = pivot(arr, left, right);
-  // left
-  quickSort(arr, left, pivotIndex - 1);
+  if (left < right) {
+    let pivotIndex = pivot(arr, left, right); //3
+    //left
+    quickSort(arr, left, pivotIndex - 1);
+    //right
+    quickSort(arr, pivotIndex + 1, right);
+  }
+  return arr;
 }
+
+quickSort([100, -3, 2, 4, 6, 9, 1, 2, 5, 3, 23]);
